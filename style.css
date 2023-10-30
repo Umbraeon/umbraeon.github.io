@@ -88,9 +88,15 @@ body {
     color: #ffffff;
     font-weight: 100;
     text-align: left;
-    overflow: visible;
-    
-        
+    overflow: visible;        
+}
+
+a{
+    color: #0400fd;
+}
+
+a:hover{
+    color: #00aeff;
 }
 
 ::-webkit-scrollbar {
