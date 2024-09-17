@@ -1,0 +1,82 @@
+/* Aqui eu requisitei minhas fontes dentro do arquivo fonts.css e as importei para meu código de estilo */
+
+@import url('fonts.css');
+
+/* Reset de configurações globais de margin e padding */
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Alinha e centraliza os itens do header e footer */
+
+header, footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+    text-align: center;
+}
+
+/* Definindo o padding padrão para o main */
+
+main {
+    padding: 0 20px;
+}
+
+/* Configura a organização dos itens dentro do header */
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estiliza o título principal da página */
+
+h1 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 46px;
+    margin: 0;
+}
+
+/* Estiliza subtítulos com uma fonte serifada */
+
+h3 {
+    font-family: "Lora", serif;
+    font-weight: normal;
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Define estilo para outros cabeçalhos da página */
+
+h2, h4 {
+    font-family: "Raleway", sans-serif;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Dá uma ênfase um pouco maior no h4 */
+
+h4 {
+    font-weight: 500;
+}
+
+/* Define a fonte e o estilo para os parágrafos */
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Define as dimensões para a divisória */
+
+.divisoria {
+    width: 900px;
+    height: 50px;
+}
