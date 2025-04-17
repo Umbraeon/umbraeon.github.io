@@ -1,82 +1,137 @@
-/* Aqui eu requisitei minhas fontes dentro do arquivo fonts.css e as importei para meu código de estilo */
-
-@import url('fonts.css');
-
-/* Reset de configurações globais de margin e padding */
-
+/* ===================
+   Reset e boas práticas
+=================== */
 html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
     margin: 0;
     padding: 0;
-}
-
-/* Alinha e centraliza os itens do header e footer */
-
-header, footer {
+  }
+  
+  body {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #0d0d0d;
+    color: #e6e6e6;
+  }
+  
+  /* ===================
+     Layout e estilo
+  =================== */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  /* Header */
+  header {
+    padding: 4rem 1rem 2rem;
+    text-align: left;
+  }
+  
+  header p {
+    font-size: 1rem;
+    color: #888;
+    margin-bottom: 0.5rem;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.1;
+  }
+  
+  header h2 {
+    font-size: 1.25rem;
+    color: #ccc;
+    margin: 1rem 0;
+  }
+  
+  header > p:last-of-type {
+    font-size: 1rem;
+    color: #999;
+    max-width: 520px;
+  }
+  
+  header button {
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  header button:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* Projetos */
+  section#projetos {
+    margin-top: 3rem;
+  }
+  
+  section#projetos h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .projetos-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #111;
+    border: 1px solid #333;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .lado-esquerdo {
+    flex: 1;
+    min-width: 280px;
+    background-color: #222;
     display: flex;
     align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  .lado-esquerdo img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .lado-direito {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 20px;
-    text-align: center;
-}
-
-/* Definindo o padding padrão para o main */
-
-main {
-    padding: 0 20px;
-}
-
-/* Configura a organização dos itens dentro do header */
-
-.header-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Estiliza o título principal da página */
-
-h1 {
-    font-family: "Oswald", sans-serif;
-    font-weight: 300;
-    font-size: 46px;
-    margin: 0;
-}
-
-/* Estiliza subtítulos com uma fonte serifada */
-
-h3 {
-    font-family: "Lora", serif;
-    font-weight: normal;
-    font-size: 16px;
-    margin: 0;
-}
-
-/* Define estilo para outros cabeçalhos da página */
-
-h2, h4 {
-    font-family: "Raleway", sans-serif;
-    font-weight: normal;
-    margin: 0;
-}
-
-/* Dá uma ênfase um pouco maior no h4 */
-
-h4 {
-    font-weight: 500;
-}
-
-/* Define a fonte e o estilo para os parágrafos */
-
-p {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
-/* Define as dimensões para a divisória */
-
-.divisoria {
-    width: 900px;
-    height: 50px;
-}
+  }
+  
+  .lado-direito h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .lado-direito p {
+    color: #999;
+    margin-bottom: 1rem;
+  }
+  
+  .lado-direito a {
+    color: #6fbf73;
+    font-weight: bold;
+  }
+  
